@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-import adeelBuxImg from "../../../assets/adeel-bux.png";
-import jugaHealthImg from "../../../assets/juga-health.png";
-import cookImg from "../../../assets/cook.png";
-import vivaWellImg from "../../../assets/vivawell.png";
-import bostomImg from "../../../assets/bostom.png";
+import {adeelBuxImg,jugaHealthImg,cookImg,vivaWellImg,bostomImg} from '../../../assets';
+
 
 function BuiltItemContainer() {
   const [image, setImage] = useState(adeelBuxImg);

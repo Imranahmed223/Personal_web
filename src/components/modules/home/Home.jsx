@@ -1,7 +1,5 @@
-// import React, { useState } from "react";
 import React from "react";
 import "./Home.scss";
-// import Socialsbar from "../socialSideBar/Socialsbar";
 import FormInput from "../FormInput/FormInput";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
@@ -13,11 +11,8 @@ const Home = () => {
     email: Yup.string().email("Email is invalid").required("Email is Required"),
     name: Yup.string().required("name is Required"),
   });
-  // const [previewImg, setPreviewImg] = useState("adeel-bux.png");
 
-  // const changeImage = (fileName) => {
-  //   setPreviewImg(fileName);
-  // };
+
 
   return (
     <>
@@ -45,12 +40,12 @@ const Home = () => {
               </p>
               <button>See my work</button>
             </div>
-            <img src={Aicon} alt="ArrowIcon" />
+            <img src={Aicon} alt="ArrowIcon"/>
           </div>
           <div className="header-container-content-right">
             <div className="header-container-content-right-menu">
               <button>01 About</button>
-              <button>02 Things I Built</button>
+              <button>02Things I Built</button>
               <button>03 Contact</button>
             </div>
           </div>
@@ -62,7 +57,6 @@ const Home = () => {
             <h1>About</h1>
           </div>
           <div className="about-container-content-right">
-            {/* <h1>Horizental Line</h1> */}
             <hr />
           </div>
         </div>
@@ -140,28 +134,6 @@ const Home = () => {
         </div>
       </div>
       <BuiltItemContainer />
-      {/* <div className="builtItem-container">
-        <div className="builtItem-container-content">
-          <div className="builtItem-container-content-left">
-            <button onClick={() => changeImage("adeel-bux.png")}>
-              01 ADEEL BUX
-            </button>
-            <button onClick={() => changeImage("juga-health.png")}>
-              02 JUGA HEALTH
-            </button>
-            <button onClick={() => changeImage("cook.png")}>
-              03 COOK IN THE NOOK
-            </button>
-            <button onClick={() => changeImage("vivawell.png")}>
-              04 VIVA WELL
-            </button>
-            <button onClick={() => changeImage("bostom.png")}>05 BOSTOM</button>
-          </div>
-          <div className="builtItem-container-content-right">
-            <img id="previewImgs" src={previewImg} alt="Project preview" />
-          </div>
-        </div>
-      </div> */}
       <div className="contact-container">
         <div className="contact-container-content">
           <div className="contact-container-content-left">
@@ -179,6 +151,10 @@ const Home = () => {
               initialValues={{
                 email: "",
                 name: "",
+              }}
+              validate={{
+                email: '',
+                name:'',
               }}
             >
               {(formik) => (

@@ -100,6 +100,7 @@
         animation-iteration-count: infinite;
         animation-timing-function: ease;
         transition: all 0.3s;
+        cursor:pointer;
       }
       @keyframes infiniteupdown {
         0% {
@@ -124,15 +125,15 @@
       background-repeat: no-repeat;
       background-size: cover;
       &-menu {
-        width: 70%;
+        width: 100%;
         height: auto;
         margin-top: 45px;
         display: flex;
         justify-content: space-between;
         padding: 0.5rem 0rem;
-        // background-color: #ffffff;
+        // background-color:red;
         & > button {
-          width: 32%;
+          width: 31.5%;
           cursor: pointer;
           font-family: "SF Mono";
           font-style: normal;
@@ -142,6 +143,7 @@
           color: $lightblack;
           background: none;
           border: none;
+
           &:hover {
             color: $blue;
             font-size: 1.6rem;
@@ -324,6 +326,7 @@
       // background-color: lightcyan;
       & > img {
         width: 100%;
+        cursor: pointer;
       }
     }
   }
@@ -490,7 +493,4 @@
     }
   }
 }
-// .Sticky{
-//   position: fixed;
-//   z-index: 9999999999999;
-// }
+

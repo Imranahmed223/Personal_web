@@ -44,14 +44,6 @@
   font-family: Calibre;
 }
 @font-face {
-  font-family: sfmono;
-  src: url("../public/sf-mono-cufonfonts/SFMonoRegular.otf");
+  font-family: 'SF Mono';
+  src: url("../public/sf-mono-cufonfonts/SFMonoRegular.otf") format('opentype');
 }
-.sf-mono {
-  font-family: SF Mono;
-}
-
-/* .sticky {
-  position: fixed;
-  z-index: 99999999;
-} */
